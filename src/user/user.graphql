@@ -1,3 +1,5 @@
+scalar Upload
+
 type User {
     id: ID!
     username: String!
@@ -18,4 +20,5 @@ type Query {
 
 type Mutation {
     createUser(input: UserInput!): User
+    uploadFile(file: Upload!): Boolean
 }
